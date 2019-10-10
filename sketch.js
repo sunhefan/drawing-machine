@@ -80,9 +80,10 @@ function drawGrid() {
 
       }
 
-      fill(fillColor);
+      fill(255,230,235);
 
-      rect(i, j, width / numCells, height / numCells);
+      rect(i*2, j*2, width / numCells, height / numCells);
+
 
     }
 
