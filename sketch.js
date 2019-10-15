@@ -1,94 +1,53 @@
-let array = [];
-let backgroundColor = 200;
 let noiseOffset = 0.0;
-let strokeWidth = 2;
+let strokeWidth = 3;
+//let angle=10;
+
+//background color
+// let col=100;
+// let a= 50;
+// let b =100;
+let xoff = 10;
+
+
+
+
+
 
 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  //background(backgroundColor);
+  background(255);
+  colorMode(HSB);
 
 
-  drawGrid();
-  strokeWeight(10);
-  noFill();
 }
 
 function draw() {
 
-  noiseOffset += 5;
-  strokeWidth = noise(noiseOffset * 100) * 100;
-  stroke(map(mouseX, 0, 500, 50, 255, true))
-
-
 
   if (mouseIsPressed) {
 
-    backgroundColor -= 5;
-    // background(backgroundColor);
-    fill(160, 245, 187);
-    array.push([mouseX, mouseY]);
-
-    background(255);
+    //background color
+    // col,a,b = mouseX/2;
+    // background (col,a,b);
 
 
 
 
-    beginShape();
-    for (let i = 0; i < array.length; i++) {
+    noiseOffset += 1;
+    strokeWidth = noise(noiseOffset * 5) * 200;
+    fill(frameCount % 360, 100, 100);
 
-      curveVertex(array[i][0], array[i][1])
+    // stroke(map(mouseX, 0, 500, 50, 255, true))
 
-    }
-    endShape();
+noStroke();
+
+    rect(width/2- mouseX, height/2 - mouseY,  width/2-pmouseX, height/2 -pmouseY)
+    for (let i=1; i<5; i++){
+  rect(mouseX, mouseY,100, 100);}
 
   }
-
   return false;
 
-}
-
-
-function mousePressed() {
-
-  array = [];
-  backgroundColor = 255;
-
-
-}
-
-
-function drawGrid() {
-
-  numCells = 20;
-  fillColor = 255;
-  // noStroke();
-  strokeWeight(0);
-
-
-  for (let i = 0; i <= width; i += width / numCells) {
-
-    for (let j = 0; j <= height; j += height / numCells) {
-
-      if (fillColor === 255) {
-
-        fillColor = 200;
-      } else {
-
-        fillColor = 255;
-
-      }
-
-      fill(255,230,235);
-
-      rect(i*2, j*2, width / numCells, height / numCells);
-
-
-    }
-
-
-  }
-
-  strokeWeight(5);
 }
