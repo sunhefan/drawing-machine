@@ -35,7 +35,7 @@ function draw() {
 
 
 
-    noiseOffset += 1;
+    noiseOffset += 0.05;
     strokeWidth = noise(noiseOffset * 5) * 200;
     fill(frameCount % 360, 100, 100);
 
@@ -43,7 +43,7 @@ function draw() {
 
 noStroke();
 
-    rect(width/2- mouseX, height/2 - mouseY,  width/2-pmouseX, height/2 -pmouseY)
+    rect(width- mouseX, height- mouseY,  width/2-pmouseX, height/2 -pmouseY)
     for (let i=1; i<5; i++){
   rect(mouseX, mouseY,100, 100);}
 
