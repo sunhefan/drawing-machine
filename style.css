@@ -8,6 +8,12 @@ body{
   width: 80%;
   text-align: center;
 
+  background-image: url("images/place0.jpg");
+
+  /* background-repeat: no-repeat, repeat; /*add background image*/ */
+
+}
+
 
 }
 canvas {
@@ -17,4 +23,12 @@ canvas {
   left:0;
   /* display: block; */
   position:absolute;
+}
+
+.randomizeButton{
+color: white;
+padding:20px, 30px;
+
+background-color:#62DFE9;
+
 }
