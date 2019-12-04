@@ -4,31 +4,8 @@ html {
 }
 
 body{
-  margin: 100px auto 0 atto;
-  width: 80%;
-  text-align: center;
-
-  background-image: url("images/place0.jpg");
-
-  /* background-repeat: no-repeat, repeat; /*add background image*/ */
-
-}
-
-
+  margin: 100px auto;
 }
 canvas {
-  /* margin: 0 auto 0 auto; */
-  margin:auto;
-  top:0;
-  left:0;
-  /* display: block; */
-  position:absolute;
-}
-
-.randomizeButton{
-color: white;
-padding:20px, 30px;
-
-background-color:#62DFE9;
-
+  display: block;
 }

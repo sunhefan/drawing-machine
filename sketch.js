@@ -7,49 +7,30 @@ let strokeWidth = 3;
 // let a= 50;
 // let b =100;
 let xoff = 10;
-let botton;
 
-let checkboxes =[];
-let size = 100;
+
+
+
+
+
 
 
 function setup() {
-
-  button = select ('#randButton');
-  button.mousePressed(buttonPressed);
-  button.class("randomizeButton");
-  noCanvas();
-  //createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight);
   background(255);
   colorMode(HSB);
-for (let i=0; i<100; i++){ //create checkbox//
-  checkboxes[i]=createCheckbox('')
-  checkboxes [i].style ('display','inline');
-  checkboxes[i].position (random(windowWidth),random(windowHeight));
-  checkboxes[i].changed(myCheckedEvent);
-}
-
-
-}
-
-function myCheckedEvent(){
-size += 50;
-}
-
-
-
-function buttonPressed(){
-  let body;
-  body=select('body');
-  body.style('background-image', "url('images/place1.jpg')");
 
 
 }
 
 function draw() {
-ellipse (mouseX,mouseY, 100,100)
+
 
   if (mouseIsPressed) {
+
+    //background color
+    // col,a,b = mouseX/2;
+    // background (col,a,b);
 
 
 
