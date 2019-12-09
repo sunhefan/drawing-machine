@@ -5,7 +5,23 @@ html {
 
 body{
   margin: 100px auto;
+
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  /* color: #7E8989; */
+  color:white;
+  text-shadow: 2px 2px 4px #323636;
+
 }
 canvas {
   display: block;
+}
+
+p {
+  margin: auto 200px;
+  position: relative;
+  color:  #323636 ;
 }
