@@ -1,13 +1,9 @@
 
 
 
-
-
-
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(255);
+  background('#11BFBF');
   colorMode(HSB);
 
 
@@ -84,6 +80,8 @@ let strokeWidth = 3;
 let xoff = 10;
 let num = 100;
 function draw() {
+
+
 
   if (mouseIsPressed) {
 

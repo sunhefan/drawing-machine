@@ -6,6 +6,7 @@ html {
 body{
   margin: 100px auto;
 
+
 }
 
 h1{
@@ -24,4 +25,5 @@ p {
   margin: auto 200px;
   position: relative;
   color:  #323636 ;
+  font-size: 20px;
 }
